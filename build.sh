@@ -225,7 +225,8 @@ make_prepare() {
 
 # Build ISO
 make_iso() {
-    mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" -L "${iso_label}" -P "${iso_publisher}" -A "${iso_application}" -o "${out_dir}" iso "${iso_name}-${iso_version}-x86_64.iso"
+#    mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" -L "${iso_label}" -P "${iso_publisher}" -A "${iso_application}" -o "${out_dir}" iso "${iso_name}-${iso_version}-x86_64.iso"
+     mkarchiso -v -w /home/demo/mylastarchiso/work/ -o /home/demo/mylastarchiso/out/ /home/demo/mylastarchiso/
 }
 
 if [[ ${EUID} -ne 0 ]]; then
@@ -255,16 +256,17 @@ done
 
 mkdir -p ${work_dir}
 
-run_once make_pacman_conf
-run_once make_basefs
-run_once make_packages
-run_once make_setup_mkinitcpio
-run_once make_customize_airootfs
-run_once make_boot
-run_once make_boot_extra
-run_once make_syslinux
-run_once make_isolinux
-run_once make_efi
-run_once make_efiboot
-run_once make_prepare
+
+#run_once make_pacman_conf
+#run_once make_basefs
+#run_once make_packages
+#run_once make_setup_mkinitcpio
+#run_once make_customize_airootfs
+#run_once make_boot
+#run_once make_boot_extra
+#run_once make_syslinux
+#run_once make_isolinux
+#run_once make_efi
+#run_once make_efiboot
+#run_once make_prepare
 run_once make_iso
