@@ -11,7 +11,7 @@ iso_publisher="Arch Linux <http://www.archlinux.org>"
 iso_application="Arch Linux Live/Rescue CD"
 iso_version=$(date +%Y.%m.%d)
 install_dir=arch
-work_dir=work
+work_dir=/home/demo/mylastarchiso/work
 out_dir=out
 gpg_key=
 
@@ -226,7 +226,7 @@ make_prepare() {
 # Build ISO
 make_iso() {
 #    mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" -L "${iso_label}" -P "${iso_publisher}" -A "${iso_application}" -o "${out_dir}" iso "${iso_name}-${iso_version}-x86_64.iso"
-     mkarchiso -v -w /home/demo/mylastarchiso/work/ -o /home/demo/mylastarchiso/out/ /home/demo/mylastarchiso/
+     mkarchiso -v -w "${work_dir}" -o /home/demo/mylastarchiso/out/ /home/demo/mylastarchiso/
 }
 
 if [[ ${EUID} -ne 0 ]]; then
