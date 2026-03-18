@@ -5,14 +5,14 @@ sudo chgrp -R root airootfs/
 
 set -e -u
 
-iso_name=archlinux
+iso_name=mylastarch
 iso_label="ARCH_$(date +%Y%m)"
 iso_publisher="Arch Linux <http://www.archlinux.org>"
 iso_application="Arch Linux Live/Rescue CD"
 iso_version=$(date +%Y.%m.%d)
-install_dir=arch
+install_dir=myllastarchiso
 work_dir=/home/demo/mylastarchiso/work
-out_dir=out
+out_dir=/home/demo/mylastarchiso/out
 gpg_key=
 
 #carli
@@ -226,7 +226,7 @@ make_prepare() {
 # Build ISO
 make_iso() {
 #    mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" -L "${iso_label}" -P "${iso_publisher}" -A "${iso_application}" -o "${out_dir}" iso "${iso_name}-${iso_version}-x86_64.iso"
-     mkarchiso -v -w "${work_dir}" -o /home/demo/mylastarchiso/out/ /home/demo/mylastarchiso/
+     mkarchiso -v -w "${work_dir}" -o "${out_dir}" /home/demo/mylastarchiso/ iso "${iso_name}-${iso_version}-x86_64.iso"
 }
 
 if [[ ${EUID} -ne 0 ]]; then
@@ -257,7 +257,7 @@ done
 mkdir -p ${work_dir}
 
 
-#run_once make_pacman_conf
+run_once make_pacman_conf
 #run_once make_basefs
 #run_once make_packages
 #run_once make_setup_mkinitcpio
