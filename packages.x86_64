@@ -1,8 +1,6 @@
 alacritty
 base
 bash-completion
-cosmic
-cosmic-icon-theme
 dhcpcd
 diffutils
 dmidecode
@@ -19,6 +17,7 @@ gptfdisk
 grub
 hdparm
 htop
+ldns
 intel-ucode
 iw
 iwd
@@ -73,6 +72,8 @@ wireless-regdb
 wireless_tools
 wpa_supplicant
 xdg-utils
+xfce4
+xfce4-goodies
 xfsprogs
 xl2tpd
 xorg-server
