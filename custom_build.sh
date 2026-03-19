@@ -40,6 +40,7 @@ sed -i 's/Session=/Session=plasma.desktop/' $airootfs/sddm.conf
 
 # Display Server
 sed -i 's/DisplayServer=x11/DisplayServer=wayland/' $airootfs/sddm.conf
+systemctl enable sddm.service
 
 # Numlock
 sed -i 's/Numlock=none/Numlock=on/' $airootfs/sddm.conf
