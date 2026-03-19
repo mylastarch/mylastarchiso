@@ -85,7 +85,7 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-zeroconf
-pipewier-pulse
+pipewire-pulse
 pavucontrol
 
 # Bluetooth
@@ -112,7 +112,7 @@ gvfs-smb
 dolphin
 dolphin-plugins
 ark
-qwenfiew
+gwenview
 gparted
 nvtop
 
