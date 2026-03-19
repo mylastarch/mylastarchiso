@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# files or packages to be removed after installation
+
+yes | sudo pacman -R calamares gparted
+
+
