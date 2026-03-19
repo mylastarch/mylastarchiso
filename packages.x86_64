@@ -74,9 +74,49 @@ wireless-regdb
 wireless_tools
 wpa_supplicant
 xdg-utils
-xfce4
-xfce4-goodies
 xfsprogs
 xl2tpd
 xorg-server
 xorg-xinit
+
+# Audio
+
+pipewire
+pipewire-alsa
+pipewire-jack
+pipewire-zeroconf
+pipewier-pulse
+pavucontrol
+
+# Bluetooth
+
+bluez
+bluez-utils
+
+# System Tools
+
+acpi
+acpid
+networkmanager
+network-manager-applet
+curl
+git
+wget
+nfs-utils
+linux-headers
+gvfs
+gvfs-smb
+
+# Software
+
+dolphin
+dolphin-plugins
+ark
+qwenfiew
+gparted
+nvtop
+
+# Desktop Environment
+
+plasma-meta
+
