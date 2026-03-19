@@ -23,6 +23,7 @@ iw
 iwd
 less
 libfido2
+libreoffice-fresh
 libusb-compat
 linux
 linux-lts
@@ -68,6 +69,7 @@ udftools
 usb_modeswitch
 usbmuxd
 usbutils
+vivaldi
 wireless-regdb
 wireless_tools
 wpa_supplicant
