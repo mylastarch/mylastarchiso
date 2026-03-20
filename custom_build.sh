@@ -84,7 +84,7 @@ sed -i 's/default=archlinux/default=mylastarch/' $grubcfg
 sed -i 's/timeout=15/timeout=10/' $grubcfg
 sed -i 's/menuentry "Arch/menuentry "mylastarch/' $grubcfg
 
-if ! grep -q 'archisosearchuuid=%ARCHISO_UUID% cow_spacesize=10G copytoram=n' $grubcfg 2> /dev/null; then
+if ! grep -q 'archisosearchuuid=%ARCHISO_UUID% cow_spacesize=10G copytoram=y' $grubcfg 2> /dev/null; then
 	sed -i 's/archisosearchuuid=%ARCHISO_UUID%/archisosearchuuid=%ARCHISO_UUID% cow_spacesize=10G copytoram=n/' $grubcfg
 fi
 
