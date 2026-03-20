@@ -20,8 +20,8 @@ sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 
 
-systemctl enable pacman-init.service choose-mirror.service
-systemctl set-default multi-user.target
+#systemctl enable pacman-init.service choose-mirror.service
+#systemctl set-default multi-user.target
 systemctl enable sddm.service
 # NOTE THESE STEPS: THEY ARE VERY IMPORTANT
 nano /etc/sudoers
