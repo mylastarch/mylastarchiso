@@ -133,5 +133,5 @@ ttf-jetbrains-mono
 ttf-ubuntu-font-family
 
 # Calamares
-#calamares
-#mylastarch-system-installation
+
+calamares-3.4.2-1-x86_64.pkg.tar.zst
