@@ -24,7 +24,7 @@ sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 #systemctl set-default multi-user.target
 systemctl enable sddm.service
 # NOTE THESE STEPS: THEY ARE VERY IMPORTANT
-nano /etc/sudoers
+#nano /etc/sudoers
 useradd -m -G wheel default
 # Don't forget to add a password, otherwise you'll cannot access sudo later.
 passwd default
