@@ -5,9 +5,9 @@ set -e -u
 sed -i 's/#\(en_US\.UTF-8\)/\1/' /etc/locale.gen
 locale-gen
 
-ln -sf /usr/share/zoneinfo/UTC /etc/localtime
+ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
 
-usermod -s /usr/bin/zsh root
+usermod -s /usr/bin/bash root
 cp -aT /etc/skel/ /root/
 chmod 700 /root
 
@@ -25,11 +25,11 @@ sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 systemctl enable sddm.service
 # NOTE THESE STEPS: THEY ARE VERY IMPORTANT
 #nano /etc/sudoers
-useradd -m -G wheel default
+#useradd -m -G wheel default
 # Don't forget to add a password, otherwise you'll cannot access sudo later.
-passwd default
+#passwd default
 # This next step is the most important: it will permit us to "pause" the mkarchiso process and customize it regarding our needs.
-su default
+#su default
 pacman -Sy
 pacman-key --init
 pacman-key --populate archlinux
