@@ -108,7 +108,7 @@ nfs-utils
 linux-headers
 gvfs
 gvfs-smb
-sublime-text-4
+#sublime-text-4
 
 # Software
 
@@ -122,6 +122,7 @@ nvtop
 # Desktop Environment
 
 plasma-meta
+kio-admin
 
 # Fonts
 
