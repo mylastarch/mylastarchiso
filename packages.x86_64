@@ -108,7 +108,7 @@ nfs-utils
 linux-headers
 gvfs
 gvfs-smb
-#sublime-text-4
+sublime-text-4
 
 # Software
 
@@ -118,6 +118,7 @@ ark
 gwenview
 gparted
 nvtop
+variety
 
 # Desktop Environment
 
@@ -136,5 +137,7 @@ ttf-ubuntu-font-family
 
 # Calamares
 
+calamares
 kpmcore
 libpwquality
+rsync

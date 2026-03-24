@@ -100,6 +100,10 @@ sed -i 's/Arch/mylastarch/' $efiloader/entries/02-archiso-speech-linux.conf
 sed -i 's/timeout 15/timeout 10/' $efiloader/loader.conf
 sed -i 's/beep on/beep off/' $efiloader/loader.conf
 
+# run commands
+pacman -Sy
+pacman-key --init
+pacman-key --populate
 
 
 
