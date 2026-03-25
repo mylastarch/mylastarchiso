@@ -104,7 +104,6 @@ curl
 git
 wget
 nfs-utils
-linux-headers
 gvfs
 gvfs-smb
 sublime-text-4
