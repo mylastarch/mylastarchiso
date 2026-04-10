@@ -42,6 +42,7 @@ mkinitcpio-archiso
 mtools
 nano
 nbd
+nfs-utils
 nmap
 ntfs-3g
 nvme-cli
