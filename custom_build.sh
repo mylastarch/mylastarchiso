@@ -21,6 +21,7 @@ ln -sv "/usr/lib/systemd/system/NetworkManager-wait-online.service" "$airootfs/s
 
 ln -sv "/usr/lib/systemd/system/NetworkManager-dispatcher.service" "$airootfs/systemd/dbus.org.freedesktop.dispatcher.service"
 
+
 ## Bluetooth
 ln -sv "/usr/lib/systemd/system/bluetooth.service" "$airootfs/systemd/system/network-online.target.wants"
 

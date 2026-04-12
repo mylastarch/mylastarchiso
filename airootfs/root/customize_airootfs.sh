@@ -6,6 +6,7 @@ sed -i 's/#\(en_US\.UTF-8\)/\1/' /etc/locale.gen
 locale-gen
 
 ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
+ln -sv "/usr/lib/libyaml-cpp.so.0.9" "/usr/lib/libyaml-cpp.so.0.8"
 
 usermod -s /usr/bin/bash root
 cp -aT /etc/skel/ /root/

@@ -42,7 +42,6 @@ mkinitcpio-archiso
 mtools
 nano
 nbd
-nfs-utils
 nmap
 ntfs-3g
 nvme-cli
@@ -104,7 +103,6 @@ network-manager-applet
 curl
 git
 wget
-nfs-utils
 gvfs
 gvfs-smb
 sublime-text-4
@@ -140,3 +138,4 @@ calamares
 kpmcore
 libpwquality
 rsync
+yaml-cpp
