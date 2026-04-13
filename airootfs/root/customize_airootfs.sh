@@ -24,13 +24,3 @@ sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 #systemctl enable pacman-init.service choose-mirror.service
 #systemctl set-default multi-user.target
 systemctl enable sddm.service
-# NOTE THESE STEPS: THEY ARE VERY IMPORTANT
-#nano /etc/sudoers
-#useradd -m -G wheel default
-# Don't forget to add a password, otherwise you'll cannot access sudo later.
-#passwd default
-# This next step is the most important: it will permit us to "pause" the mkarchiso process and customize it regarding our needs.
-#su default
-pacman -Sy
-pacman-key --init
-pacman-key --populate archlinux
