@@ -24,6 +24,7 @@ intel-ucode
 iw
 iwd
 less
+libatomic_ops
 libfido2
 libreoffice-fresh
 libusb-compat
@@ -32,6 +33,7 @@ linux-firmware
 linux-firmware-marvell
 livecd-sounds
 lsscsi
+lvm2
 lynx
 man-db
 man-pages
@@ -53,6 +55,7 @@ os-prober
 partclone
 parted
 partimage
+pv
 sddm
 sdparm
 sg3_utils
@@ -70,7 +73,6 @@ udftools
 usb_modeswitch
 usbmuxd
 usbutils
-vivaldi
 wireless-regdb
 wireless_tools
 wpa_supplicant
@@ -116,6 +118,7 @@ gwenview
 gparted
 nvtop
 variety
+vivaldi
 
 # Desktop Environment
 
