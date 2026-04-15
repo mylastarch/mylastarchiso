@@ -6,9 +6,9 @@ sudo chgrp -R root airootfs/
 set -e -u
 
 iso_name=mylastarch
-iso_label="ARCH_$(date +%Y%m)"
-iso_publisher="Arch Linux <http://www.archlinux.org>"
-iso_application="Arch Linux Live/Rescue CD"
+iso_label="MYLASTARCH_$(date +%Y%m)"
+iso_publisher="MY LAST ARCH <http://www.dccwebsite.com>"
+iso_application="MY LAST ARCH Live/Rescue CD"
 iso_version=$(date +%Y.%m.%d)
 install_dir=mylastarchiso
 work_dir=/home/demo/mylastarchiso/work

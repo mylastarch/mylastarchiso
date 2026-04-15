@@ -9,6 +9,7 @@ dmidecode
 dnsmasq
 dosfstools
 e2fsprogs
+edk2-shell
 efibootmgr
 exfatprogs
 f2fs-tools
