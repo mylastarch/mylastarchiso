@@ -57,7 +57,6 @@ partclone
 parted
 partimage
 pv
-sddm
 sdparm
 sg3_utils
 smartmontools
@@ -124,7 +123,9 @@ vivaldi
 # Desktop Environment
 
 plasma-meta
+kde-applications-meta
 kio-admin
+sddm
 
 # Fonts
 
