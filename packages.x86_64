@@ -62,7 +62,7 @@ sg3_utils
 smartmontools
 sof-firmware
 squashfs-tools
-sudo
+#sudo
 syslinux
 systemd-resolvconf
 tcpdump
@@ -123,7 +123,7 @@ vivaldi
 # Desktop Environment
 
 plasma-meta
-kde-applications-meta
+#kde-applications-meta
 kio-admin
 sddm
 
@@ -138,7 +138,6 @@ ttf-jetbrains-mono
 ttf-ubuntu-font-family
 
 # Calamares
-
 calamares
 kpmcore
 libpwquality

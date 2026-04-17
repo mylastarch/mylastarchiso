@@ -9,7 +9,7 @@ cp -r "/etc/default/grub" "$airootfs/default"
 # wheel Group
 mkdir -p "$airootfs/sudoers.d"
 g_wheel=($airootfs/sudoers.d/g_wheel)
-echo "%wheel ALL=(ALL:ALL) ALL" > $g_wheel
+#echo "%wheel ALL=(ALL:ALL) ALL" > $g_wheel
 
 #Symbolic Links
 ##Network Manager
