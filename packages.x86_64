@@ -62,7 +62,7 @@ sg3_utils
 smartmontools
 sof-firmware
 squashfs-tools
-#sudo
+sudo
 syslinux
 systemd-resolvconf
 tcpdump
